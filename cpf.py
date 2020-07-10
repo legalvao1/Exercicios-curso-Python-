@@ -49,11 +49,9 @@ def verifica_cpf(cpf):
                 novo_cpf += str(digito)
 
     if novo_cpf == cpf:
-        print('CPF VÁLIDO')
+        return 'CPF VÁLIDO'
 
-    else:
-        print('CPF INVÁLIDO')
-
+    return 'CPF INVÁLIDO'  # me retorna que é inválido por padrão
 
 
-verifica_cpf(cpf)
+print(verifica_cpf(cpf))
